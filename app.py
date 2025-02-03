@@ -9,7 +9,7 @@ def home():
     data = req.json()
     return render_template("index.html", data = data)
 
-@app.route("/pastComic")             #decorator defines routes in app, in this case home '/' 
+@app.route("/pastComic")             #decorator defines routes in app, in this case home '/'
 def pastComic():
     URL = "https://xkcd.com/info.0.json"
     req = requests.get(url = URL)
